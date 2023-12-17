@@ -54,6 +54,13 @@ const storage = getStorage(app1);
 //setMaxOperationRetryTime (1000);
 
 
+app.post("/hi" , (req,res)=>{
+
+    console.log("hello");
+    res.send("HELLO BITCH");
+})
+
+
 app.post("/upload", multer.single("img"), (req,res)=>{
 
    // res.write("Uploaded successfuly!");
