@@ -61,7 +61,7 @@ app.get("/hi" , (req,res)=>{
 })
 
 
-app.get("/upload", multer.single("img"), (req,res)=>{
+app.post("/upload", multer.single("img"), (req,res)=>{
 
    // res.write("Uploaded successfuly!");
    console.log("Uploaded successfuly!");
